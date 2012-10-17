@@ -1,0 +1,49 @@
+/*
+Theme Name: MonstruoBicefalo Tema
+Description: Child theme for PictureThis
+Author: Tahiche Guillem
+Template: picturethis
+*/
+
+@import url("../picturethis/style.css");
+body, p {
+	font-family: Arial;
+	font-size: 12px;
+	height: 100%;
+	color: #727272;
+	overflow: none;
+}
+h1{
+	font-family: 'Oswald', 'AsapRegular',Arial, Helvetica, sans-serif;
+	font-size:40px;
+	}
+h1.big_title{
+background: none;
+width: 824px;
+text-transform: lowercase;
+margin-bottom: -35px;
+	}
+.page_content {
+width: 824px;
+overflow: hidden;
+margin: 35px 0;
+background-color: black;
+padding: 0 0 20px;
+-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.tag-desc{
+padding: 20px 20px;
+}
+h2 .thumb_title{
+background-color: black;
+background: rgba(0, 0, 0, 0.6);
+font-family: 'Oswald', 'AsapRegular',Arial, Helvetica, sans-serif;
+font-size: 16px;
+position: absolute;
+z-index: 1;
+bottom: 5px;
+padding: 5px;
+display:inline;clear:left;float:left;
+	}

@@ -1,0 +1,7 @@
+#mainpage {
+	clear: left;
+}
+#logo {
+	padding-left: 20px;
+}
+#supersized-loader { display: none; }
