@@ -13,11 +13,7 @@ if(!$cg_custom_bg_image) { ?>
 <?php } ?>
 @import url( <?php bloginfo('stylesheet_url');?> );
 @import url( <?php bloginfo('template_url'); ?>/style/skin.php );
-
-
-@import url( <?php bloginfo('stylesheet_directory'); ?>/styles/slides/css/slides.css ); 
-@import url( <?php bloginfo('stylesheet_directory'); ?>/styles/animate-custom.css ); 
-
+@import url( <?php bloginfo('template_url'); ?>/style/slides.css );
 
 <?php if(get_option('custom_css')) { echo get_option('custom_css'); } ?>
 </style>
@@ -46,12 +42,9 @@ $(function(){
 	$('#slides').slides({
 		preload: true,
 		preloadImage: 'images/loading.gif',
-		/*generateNextPrev: true,*/
-		effect: 'fade',
-		crossfade:true,
 		play: 5000,
 		pause: 2500,
-		hoverPause: false
+		hoverPause: true
 	});
 });
 </script>
@@ -255,23 +248,12 @@ jQuery(function($){
 });
 <?php } ?>
 
-<?php
-if(is_home()) {?>
-$(document).ready(function() {
-
-jQuery('ul.menu li').find('ul:eq(0)').addClass('fadeOutLeft').hide().delay(1500).queue(function(){ 
-//alert(jQuery(this));
- jQuery(this).removeClass('fadeOutLeft').show().addClass('animated fadeInLeft');
- jQuery(this).dequeue(); 
-})
-});
-<?php
-}
-?>
 </script>
 
 </head>
 <body <?php body_class(); ?>>
+
+
 
 	<div id="header">
 		<?php

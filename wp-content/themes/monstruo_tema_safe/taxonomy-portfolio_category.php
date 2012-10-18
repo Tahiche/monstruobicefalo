@@ -25,7 +25,7 @@ if ( tag_description() !== '' ) { ?>
 		/*dump_post();*/
 		the_post(); 
 		$thumb = get_post_thumbnail_id(); 
-		$image = vt_resize( $thumb,'' , 249, 140, true, 70 );
+		$image = vt_resize( $thumb,'' , 253, 145, true, 70 );
 		?>
       	<li>
           <div class="portfolio_thumbnail"> 

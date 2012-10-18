@@ -6,7 +6,7 @@ if(!is_admin()) {
 	wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script('supersized.3.1.3.min', CADEN_JS . '/supersized.3.1.3.min.js');
-	wp_enqueue_script('custom', CADEN_JS . '/custom.js');
+	//wp_enqueue_script('custom', CADEN_JS . '/custom.js');
 	
 	if(!is_home()) {
 	wp_enqueue_script('jquery.prettyPhoto', CADEN_JS . '/jquery.prettyPhoto.js');

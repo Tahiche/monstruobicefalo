@@ -7,7 +7,7 @@ Template: picturethis
 
 @import url("../picturethis/style.css");
 body, p {
-	font-family: Arial;
+	font-family:Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	height: 100%;
 	color: #727272;
@@ -16,15 +16,16 @@ body, p {
 h1{
 	font-family: 'Oswald', 'AsapRegular',Arial, Helvetica, sans-serif;
 	font-size:40px;
+	text-transform:none !important;
 	}
 h1.big_title{
 background: none;
 width: 824px;
-text-transform: lowercase;
+text-transform: lowercase !important;
 margin-bottom: -35px;
 	}
 .page_content {
-width: 824px;
+width: 840px;
 overflow: hidden;
 margin: 35px 0;
 background-color: black;
@@ -35,6 +36,7 @@ box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 .tag-desc{
 padding: 20px 20px;
+margin-bottom:-50px;
 }
 h2 .thumb_title{
 background-color: black;
@@ -46,4 +48,76 @@ z-index: 1;
 bottom: 5px;
 padding: 5px;
 display:inline;clear:left;float:left;
+	}
+
+#content {
+/*width: 509px;
+float: left;*/
+padding: 0 20px 0 20px;
+}
+	
+/************* portfolio *************/
+.content_portfolio{
+	width: 800px!important;
+padding: 20px;
+	}
+.blog_post {
+display: block;
+width: 100%;
+clear: both;
+overflow: hidden;
+margin: 0 0 20px 0;
+}
+h1.tit_trabajo{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	float:left;
+	width:300px;
+	}
+#desc_proyect{	
+float: right;
+width: 400px;
+color:#FFF;
+}
+/*.slides_container {
+width: 784px !important;
+}*/
+
+/************* menu ***************/
+ul.sub-menu{
+height: 160px;
+margin-top: -20px;
+padding-top: 20px;
+
+
+	}
+.menu-item-object-portfolio_category{
+	width:190px;
+	height:160px;
+	display:block;
+	background-image:url(images/menu/piezas.jpg);
+	background-position:0 0;
+	text-indent:-1000px;
+	overflow:hidden;
+	border-bottom: 5px solid black;
+	}
+#menu-item-107{
+	background-image:url(images/menu/campanas.jpg);
+	}
+#menu-item-108{
+	background-image:url(images/menu/compos.jpg);
+	}
+#menu-item-112{
+	background-image:url(images/menu/sellos.jpg);
+	}
+#menu-item-112{
+	background-image:url(images/menu/leaflets.jpg);
+	}
+.menu-item-object-portfolio_category a{
+	width:100%;
+	height:100%;
+	background-color:transparent !important;
+	margin:0;
+	padding:0;
 	}

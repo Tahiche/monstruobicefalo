@@ -39,5 +39,6 @@ register_taxonomy('portfolio_category','portfoliocpt',array(
 	'show_ui' => true,
 	'query_var' => true,
 	'rewrite' => false,
+	'show_in_nav_menus'=> true,
 ));
 ?>
