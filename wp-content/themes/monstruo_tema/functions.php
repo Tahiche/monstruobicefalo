@@ -1,6 +1,9 @@
 <?php
 define('DIR_JS', get_stylesheet_directory_uri() . '/js');
 define('PARENT_JS', get_template_directory_uri() . '/js');
+// load menu alter for editor
+require_once(STYLESHEETPATH .'/funciones/menu_alter.php');
+
 if(!is_admin()) {
 	//wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js' );
 	//quito el js de pictureThis y añado el mio (picturethis en framework/scripts, es un include
