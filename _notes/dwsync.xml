@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="wp-app.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129814117000000000" remote="129936725400000000" Dst="2" />
-<file name="wp-comments-post.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129785448780000000" remote="129936725400000000" Dst="2" />
-<file name="wp-blog-header.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129705084720000000" remote="129936725400000000" Dst="2" />
-<file name="wp-config-sample.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129330891120000000" remote="129936725400000000" Dst="2" />
-<file name="wp-cron.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129706021520000000" remote="129936725400000000" Dst="2" />
-<file name="wp-config.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129924778948200220" remote="129936725400000000" Dst="2" />
-<file name="wp-links-opml.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129323026540000000" remote="129936725400000000" Dst="2" />
-<file name="wp-load.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129912570740000000" remote="129936725400000000" Dst="2" />
-<file name="wp-login.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129852032260000000" remote="129936725400000000" Dst="2" />
-<file name="wp-mail.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129804319400000000" remote="129936725400000000" Dst="2" />
-<file name="wp-settings.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129799688760000000" remote="129936725400000000" Dst="2" />
-<file name="wp-signup.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129794568320000000" remote="129936725400000000" Dst="2" />
-<file name="wp-trackback.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129705084720000000" remote="129936725400000000" Dst="2" />
-<file name="xmlrpc.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129739033620000000" remote="129936725400000000" Dst="2" />
+<file name="wp-app.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129814117000000000" remote="129936725400000000" />
+<file name="wp-comments-post.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129785448780000000" remote="129936725400000000" />
+<file name="wp-blog-header.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129705084720000000" remote="129936725400000000" />
+<file name="wp-config-sample.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129330891120000000" remote="129936725400000000" />
+<file name="wp-cron.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129706021520000000" remote="129936725400000000" />
+<file name="wp-config.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129924778948200220" remote="129936725400000000" />
+<file name="wp-links-opml.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129323026540000000" remote="129936725400000000" />
+<file name="wp-load.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129912570740000000" remote="129936725400000000" />
+<file name="wp-login.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129852032260000000" remote="129936725400000000" />
+<file name="wp-mail.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129804319400000000" remote="129936725400000000" />
+<file name="wp-settings.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129799688760000000" remote="129936725400000000" />
+<file name="wp-signup.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129794568320000000" remote="129936725400000000" />
+<file name="wp-trackback.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129705084720000000" remote="129936725400000000" />
+<file name="xmlrpc.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129739033620000000" remote="129936725400000000" />
+<file name=".htaccess" server="ftp.monstruobicefalo.com/httpdocs/" local="129942001200000000" remote="129942001200000000" />
+<file name="index.php" server="ftp.monstruobicefalo.com/httpdocs/" local="129942013200000000" remote="129942013200000000" />
 </dwsync>

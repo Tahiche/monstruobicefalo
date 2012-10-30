@@ -86,33 +86,46 @@ width: 784px !important;
 
 /************* menu ***************/
 ul.sub-menu{
-height: 160px;
+height: 190px;
 margin-top: -20px;
-padding-top: 20px;
+/*padding-top: 20px;*/
 
 
 	}
+
 .menu-item-object-portfolio_category{
 	width:190px;
 	height:160px;
 	display:block;
-	background-image:url(images/menu/piezas.jpg);
+	/*background-image:url(images/menu/piezas.jpg);*/
+	background-color:#000;
 	background-position:0 0;
 	text-indent:-1000px;
 	overflow:hidden;
 	border-bottom: 5px solid black;
+	margin-top:20px !important;
+	margin-bottom:20px !important;
 	}
-#menu-item-107{
+#menu-item-107 a{
 	background-image:url(images/menu/campanas.jpg);
 	}
-#menu-item-108{
+#menu-item-108 a{
 	background-image:url(images/menu/compos.jpg);
 	}
-#menu-item-112{
+#menu-item-109 a{
 	background-image:url(images/menu/sellos.jpg);
 	}
-#menu-item-112{
+#menu-item-112 a{
 	background-image:url(images/menu/leaflets.jpg);
+	}
+#menu-item-110 a{
+	background-image:url(images/menu/campanas.jpg);
+	}
+#menu-item-111 a{
+	background-image:url(images/menu/piezas.jpg);
+	}
+#menu-item-113 a{
+	background-image:url(images/menu/compos.jpg);
 	}
 .menu-item-object-portfolio_category a{
 	width:100%;
@@ -121,3 +134,19 @@ padding-top: 20px;
 	margin:0;
 	padding:0;
 	}
+
+#header {
+position: fixed;
+z-index: 200;
+
+}
+
+#cover_black {
+position: absolute;
+height: 1000px;
+width: 100%;
+background: rgba(0, 0, 0, 0.6);
+z-index: 199;
+display:none;
+pointer-events: none;
+}

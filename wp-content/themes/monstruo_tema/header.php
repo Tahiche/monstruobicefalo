@@ -193,8 +193,10 @@ jQuery(function($){
 	$default_image = get_post_meta(get_the_id(), 'cg_default_image', true);
 	$default_bg_image = get_option('default_bg_image');
 	
+	//d(is_category());
 	/* Get image/slideshow settings to 
 	display on the homepage */
+		
 	if(is_home()) {
 		
 		$cg_home_image = get_post_meta(get_the_id(), 'cg_home_image', true);
@@ -202,19 +204,43 @@ jQuery(function($){
 		if($homepage_slide_count == "") {
 			$homepage_slide_count = "10";
 		}
-        query_posts(array('post_type' => 'homepage_slider', 'posts_per_page' => $homepage_slide_count));
+      	query_posts(array('post_type' => 'fondo_home', 'posts_per_page' => $homepage_slide_count));
     	$c=0;    //FH: new, 13.04.2011
         while(have_posts()) {
         the_post();
-            $content = strip_tags(get_the_content());
-        	echo ($c > 0) ? ',' : '';         // FH: new, 13.04.2011
-            echo "{image : '".$content."'}";    //   echo "{image : '".$content."'},";
-        	$c++;                // FH: new, 13.04.2011
+		if( function_exists( 'attachments_get_attachments' ) )
+  {
+	  $c=0;    //FH: new, 13.04.2011
+    $attachments = attachments_get_attachments();
+	//d($attachments);
+    $total_attachments = count( $attachments );
+	for( $i=0; $i<$total_attachments; $i++ ){
+		$content=$attachments[$i]['location'];
+		echo ($i > 0) ? ',' : '';         // FH: new, 13.04.2011
+		echo "{image : '".$content."'}";    //   echo "{image : '".$content."'},";
+		$c++;                // FH: new, 13.04.2011*/
+		}
+  }
+         
         }
 
 		wp_reset_query();
 		
-	} else /*If not homepage */ {
+	} 
+	else if ( $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ) ){
+		 $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+		if($term->term_id==5){
+			//d($term);
+			echo "{image : 'http://www.monstruobicefalo.com/wp-content/uploads/2012/10/fondobus.jpg'}"; 
+			}
+		if($term->term_id==4){
+			//d($term);
+			echo "{image : 'http://www.monstruobicefalo.com/wp-content/uploads/2012/10/fondo1.jpg'}"; 
+			}
+		}
+	else /*If not homepage */ {
+
+
 
 		if($default_image == "y") {
 			if($default_bg_image != "") {
@@ -273,7 +299,9 @@ jQuery('ul.menu li').find('ul:eq(0)').addClass('fadeOutLeft').hide().delay(1500)
 </head>
 <body <?php body_class(); ?>>
 
+ <div id="cover_black"></div>
 	<div id="header">
+   
 		<?php
 		$custom_logo = get_option('custom_logo'); 
 		$site_name = get_option('site_name');
