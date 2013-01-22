@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'monstruobicefalo');
+define('DB_NAME', 'monstruobicefalo_db'); 
 
 /** MySQL database username */
-define('DB_USER', 'tahi');
+define('DB_USER', 'monstruouserbbdd');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'tahi');
+define('DB_PASSWORD', 'monstruosa');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -80,6 +80,9 @@ define ('WPLANG', 'es_ES');
  * in their development environments.
  */
 define('WP_DEBUG', false);
+
+@ini_set('display_errors',1);@ini_set('error_reporting',1); 
+
 
 /* That's all, stop editing! Happy blogging. */
 

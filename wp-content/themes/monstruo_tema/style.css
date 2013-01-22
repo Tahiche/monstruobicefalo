@@ -6,23 +6,30 @@ Template: picturethis
 */
 
 @import url("../picturethis/style.css");
+html, body, #mainpage, .fullblack{
+	height:100%;
+	}
 body, p {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	font-size: 12px;
 	height: 100%;
 	color: #727272;
 	overflow: none;
 }
 h1{
-	font-family: 'Oswald', 'AsapRegular',Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size:40px;
 	text-transform:none !important;
+	font-weight:bolder;
 	}
 h1.big_title{
 background: none;
 width: 824px;
 text-transform: lowercase !important;
 margin-bottom: -35px;
+	}
+.lowercase{
+text-transform: lowercase !important;
 	}
 .page_content {
 width: 840px;
@@ -34,20 +41,82 @@ padding: 0 0 20px;
 -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
+#content-fullwidth-portfolio {
+width: auto;
+overflow: none;
+padding: 0;
+}
+.fullblack{
+	margin:0;
+	padding-top:70px;
+	}
+.slimblack{
+	width: 500px;
+padding: 30px;
+padding-top:70px;
+	}
+#portfolio_content{
+	clear:both;
+	}
+
+.slimblack #taxo_textos{
+padding: 0 10px;
+position: relative;
+margin-bottom: 20px;
+	}
+#taxo_textos .tag-desc{
+bottom: 0;
+width: 310px;
+margin: 0;
+margin-left: 170px;
+padding: 0;
+
+}
+#taxo_textos .tag-desc p{
+	margin:0;
+	}
+ #taxo_textos .tit_trabajo{
+	width: 145px;
+position: absolute;
+bottom: 0;
+padding: 0;
+margin: 0;
+	}
+
+
+ul.three-column li{
+	width: auto;
+margin: 0;
+padding: 10px 0;
+width: 33%;
+	}
+ul.three-column li .portfolio_thumbnail {
+width: 145px;
+height: 145px;
+position: relative;
+margin: 0 auto;
+}
+.portfolio_thumbnail img.vermas{
+z-index: 2;
+position: absolute;
+left: 90px;
+}
+
 .tag-desc{
 padding: 20px 20px;
 margin-bottom:-50px;
 }
-h2 .thumb_title{
+.portfolio_thumbnail h2 {
 background-color: black;
 background: rgba(0, 0, 0, 0.6);
-font-family: 'Oswald', 'AsapRegular',Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 font-size: 16px;
 position: absolute;
 z-index: 1;
 bottom: 5px;
 padding: 5px;
-display:inline;clear:left;float:left;
+opacity:0;
+filter:alpha(opacity=0); /* For IE8 and earlier */
 	}
 
 #content {

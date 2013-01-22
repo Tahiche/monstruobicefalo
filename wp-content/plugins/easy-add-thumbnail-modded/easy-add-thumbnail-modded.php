@@ -31,7 +31,7 @@ add_theme_support( 'post-thumbnails' );
    global $post;
           
    $already_has_thumb = has_post_thumbnail();
-  // d( $already_has_thumb);      
+ // d( $already_has_thumb);      
   if (!$already_has_thumb)  {
   if( function_exists( 'attachments_get_attachments' ) )
   {

@@ -2,7 +2,7 @@
 
 <div id="mainpage">
 <!-- start page background -->
-<div class="page_content">
+<div class="page_content fullblack">
 	
     <!-- start content area -->
 	<div id="content" class="content_portfolio">

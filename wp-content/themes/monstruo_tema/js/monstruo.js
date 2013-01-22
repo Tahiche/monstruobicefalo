@@ -1,8 +1,12 @@
 function portfolio() {
 	$('#content-fullwidth-portfolio ul li a').hover(function() {
-		$(this).children('.front').stop().animate({"opacity": ".4"}, 500);
+		$(this).children('.front').stop().animate({"opacity": ".2"}, 500);
+		
+		$(this).children('h2').stop().animate({"opacity": "1"}, 500);
+		
 	}, function() {
 		$(this).children('.front').stop().animate({"opacity": "1"}, 500);
+		$(this).children('h2').stop().animate({"opacity": "0"}, 500);
 	});
 }
 function menu() {

@@ -284,12 +284,12 @@ jQuery(function($){
 <?php
 if(is_home()) {?>
 $(document).ready(function() {
-
-jQuery('ul.menu li').find('ul:eq(0)').addClass('fadeOutLeft').hide().delay(1500).queue(function(){ 
+/*jQuery('ul.menu li').find('ul:eq(0)').addClass('fadeOutLeft').hide().delay(1500).queue(function(){ 
 //alert(jQuery(this));
+jQuery(this).dequeue(); 
  jQuery(this).removeClass('fadeOutLeft').show().addClass('animated fadeInLeft');
- jQuery(this).dequeue(); 
-})
+ 
+})*/
 });
 <?php
 }
